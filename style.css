@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+/*Importando uma fonte.*/
+
+/* Corpo do Programa*/
+body {
+    margin: 0;
+    /*É o espaçamento da parte de fora do elemento ///// No corpo não vai existir margem pois está em 0.*/
+    font-family: Noto Sans, sans-serif;
+    /*Está usando o Noto sans, mas também está o usando outra fonte*/
+    color: white;
+    background: rgb(14, 12, 12);
+    font-size: 2.5vh;
+}
+
+header {
+    background: #1A1A23;
+}
+
+/* Está dentro da tag nav e a ul é uma tag de lista não ordenada*/
+ul {
+    display: flex;
+}
+
+/* Está dentro da ul e ela serve para listar, ou seja, colocar em tópicos*/
+li {
+    margin: 10px;
+    list-style: none;
+    /*Está deixando sem decoração na lista*/
+    display: inline-block;
+    padding: 0px 20px;
+}
+/* resp */
+main {
+    background: #1A1A23;
+}
+
+.btn-login>a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    /*Está deixando sem decoração no texto*/
+    color: white;
+    /*Está colorindo a letra*/
+}
+
+/* Está dentro da li e ela serve como uma espécie de âncora você colocar o nome e o endereçamento que quiser*/
+.home-pointer {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    /*Está deixando sem decoração no texto*/
+    color: white;
+    /*Está colorindo a letra*/
+}
+
+.home-pointer:hover {
+    color: #2BD2FF;
+    /*Está colorindo a letra*/
+}
+
+.home-pointer {
+    cursor: pointer;
+}
+
+/* Criei uma class para a parte do header*/
+.menu-header {
+    display: flex;
+    /*defina a maneira como determinado elemento HTML deve ser renderizado, o flex serve para organizar o header, A flexpropriedade é uma propriedade abreviada*/
+    justify-content: flex-end;
+    /*A justify-contentpropriedade alinha os itens do container flexível quando os itens não utilizam todo o espaço disponível no eixo principal (horizontal).*/
+    align-items: center;
+    padding: 10px 10%;
+}
+
+span {
+    color: #0093E9;
+}
+
+.logo-menu {
+    margin-right: auto;
+}
+
+.btn-log {
+    padding: 0px 20px;
+}
+
+img{
+    height: 370px;
+    margin: 0px 6%;
+}
+
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.text-2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px 0px;
+    width: 100%;
+}
+
+.box-text {
+    width:100%;
+}
+
+.box-text-2>p {
+    color: #adadad;
+}
+
+.box-text>p {
+    color: #adadad;
+}
+
+.btn-login {
+    outline: none;
+    font-family: Noto sans, sans-serif;
+    width: 100%;
+    background: #0093E9;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    width: 70px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #0093E9;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-saiba {
+    outline: none;
+    font-family: Noto Sans, sans-serif;
+    width: 100%;
+    background: #0093E9;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #0093E9;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-saiba:hover {
+    background: #2BD2FF;
+    box-shadow: 0px 10px 40px -12px #2BD2FF;
+}
+
+.btn-login:hover {
+    background: #2BD2FF;
+    box-shadow: 0px 10px 40px -12px #2BD2FF;
+}
+
+
+.btn-dados {
+    outline: none;
+    padding: 20px;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #2BD2FF;
+    width: 100%;
+    width: 300px;
+    box-shadow: 0px 10px 40px -12px #2BD2FF;
+}
+
+.btn-dados>a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.btns {
+    background: #1A1A23;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+.box-btn {
+    padding: 20px;
+}
+
+.btn {
+    color: white;
+}
+
+.btn-dados:hover {
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.contatos>a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-footer {
+    text-align: center;
+}
+
+.box-footer>h2 {
+    padding: 0px 50px;
+}
+
+.box-footer {
+    height: 170px;
+}
+
+.text>img {
+    animation: flutuacao 6s ease-in-out infinite;
+}
+
+@keyframes flutuacao {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.text-2>img {
+    animation: flutuacao 6s ease-in-out infinite;
+}
+
+@keyframes flutuacao {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 1250px) {
+    body {
+        /*É o espaçamento da parte de fora do elemento ///// No corpo não vai existir margem pois está em 0.*/
+        font-family: Noto Sans, sans-serif;
+        /*Está usando o Noto sans, mas também está o usando outra fonte*/
+        color: white;
+        background: rgb(14, 12, 12);
+        font-size: 2vh;
+    }
+    
+    header {
+        background: #1A1A23;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        height: 300px;
+    }
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .text-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 0px 100px 0px;       
+    }
+    .box-footer {
+        height: 120px;
+    }
+    
+    .logo-menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu-header {
+        display: flex;
+        /*defina a maneira como determinado elemento HTML deve ser renderizado, o flex serve para organizar o header, A flexpropriedade é uma propriedade abreviada*/
+        justify-content: center;
+        /*A justify-contentpropriedade alinha os itens do container flexível quando os itens não utilizam todo o espaço disponível no eixo principal (horizontal).*/
+        align-items: center;
+    }
+}
