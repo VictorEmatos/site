@@ -167,6 +167,11 @@ img{
     width: 100%;
     width: 300px;
     box-shadow: 0px 10px 40px -12px #2BD2FF;
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .btn-dados>a {
@@ -198,14 +203,6 @@ img{
 
 .btn {
     color: white;
-}
-
-.btn-dados:hover {
-    animation-name: anima;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .contatos>a {
@@ -293,7 +290,8 @@ img{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: start;
+        padding: 0px 10px;
     }
     
     .text-2 {
@@ -301,13 +299,30 @@ img{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        padding: 0px 0px 100px 0px;       
+        text-align: start;
+        padding: 0px 0px 100px 0px;      
     }
     .box-footer {
         height: 120px;
     }
     
+    .box-text-2 {
+        padding: 0px 10px;
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center;
+        padding: 120px 0px;
+        text-align: center;
+    }
+
+    .h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
     .logo-menu {
         display: none;
         visibility: hidden;
