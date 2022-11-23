@@ -5,67 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-Estação Meteorológica</title>
-    <link rel="nuvem icon" href="icons8-nuvens-96.png">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<!--<body onload="loading()">-->
 <body>
-    
     <header>
-        <div class="menu-header">
-            <h1 class="logo-menu">GRUPO 1</h1>
-            <nav>
-                <ul>
-                    <li><a class="home-pointer" id="refresh">HOME</a></li>
-                    <li><a class="home-pointer" href="#">ESCOPO</a></li>
-                    <li><a class="home-pointer" href="https://forms.gle/USPK7qdKeSdBMoZy9">AVALIAR</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 class="logo">GRUPO 1</h1>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+              <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#" id="refresh">HOME</a></li>
+                <li><a href="#" target="_blank">ESCOPO</a></li>
+                <li><a href="https://forms.gle/USPK7qdKeSdBMoZy9" target="_blank">AVALIAR</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="btns">
-            <div class="btn">
-                <h1><a name="dados" class="h1">Entre e Acesse os Dados.</a></h1>
-                <div class="box-btn">
-                    <a href="https://thingspeak.com/channels/1892968"><button class="btn-dados">Dados Meteorológicos</button></a>
+        <div class="pagina-inicial">
+            <div class="box-page">
+                <h1>A melhor forma de descobrir<br>dados Meteorológicos</h1>
+                <a href="https://thingspeak.com/channels/1892968" target="_blank"><button class="btn">Clique aqui</button></a>   
+            </div>
+            <img class="img-inicial" src="1.png" alt="icon">
+        </div>
+        <div class="usuarios">
+            <h1 class="titulo">Usamos</h1>
+            <div class="imgs">
+                <img class="img" src="html.png" alt="icon">
+                <img class="img" src="css.png" alt="icon">
+                <img class="img-js" src="js.png" alt="icon" height="70px">
+                <img class="img" src="php.png" alt="icon">
+                <img class="img" src="fala.png" alt="icon">
+            </div>
+        </div>
+        <div class="dados">
+            <img class="img-dados" src="2.png" alt="icon">
+            <div class="box-dados">
+                <h1>As principais ferramentas utilizadas<br>para a Mini-Estação Meteorológica</h1>
+                <p>Utilizamos várias linguagens com cada uma tendo uma finalidade,<br>como aqui em baixo 
+                    mostrando a porcentagem de uso delas.
+                </p>
+                <div class="gráfico">
+                    <div class="dados-gráfico">
+                        <p>Html</p>
+                        <p>60%</p>
+                    </div>
+                    <span></span>
+                    <div class="dados-gráfico">
+                        <p>CSS</p>
+                        <p>75%</p>
+                    </div>
+                    <span></span>
+                    <div class="dados-gráfico">
+                        <p>JavaScript</p>
+                        <p>40%</p>
+                    </div>
+                    <span></span>
+                    <div class="dados-gráfico">
+                        <p>PHP</p>
+                        <p>85%</p>
+                    </div>
+                    <span></span>
+                    <div class="dados-gráfico">
+                        <p>ThingSpeak</p>
+                        <p>20%</p>
+                    </div>
+                    <span></span>
                 </div>
             </div>
         </div>
-        <div class="screen-text">
-                <div class="text">
-                    <img class="img-principal" src="1.png" alt="icon">
-                    <div class="box-text">
-                        <h1>Para que<span> serve</span> a<br><span>Mini</span> Estação <span>Meteorológica</span> ?</h1>
-                        <p>São capazes de registrar a temperatura do ar,<br>velocidade e direção do vento,
-                        umidade do ar, radiação solar,<br>chuva, pressão atmosférica entre outras variáveis.</p>
-                        <a href="#"><button class="btn-saiba">Saiba Mais</button></a>
-                    </div>
-                </div>   
-                <div class="text-2">
-                    <div class="box-text-2">
-                        <h1>Se <span>pudesse</span> dar uma <span>nota</span>,<br>qual <span>nota</span> seria ?</h1>
-                        <p>Contamos com você para que possa dar sua
-                        opinião<br>sobre o projeto "Mini-Estação Meteorológica"</p>
-                        <a href="https://forms.gle/USPK7qdKeSdBMoZy9"><button class="btn-saiba">Saiba Mais</button></a>
-                    </div>
-                    <img src="3.png" alt="icon">
+        <div class="box-carrousel">
+            <h1>Portfólio</h1>
+            <p>Tenha acesso as fotos de nosso trabalho</p>
+            <div class="carrousel">
+                <div class="btn-slide">
+                    <button class="btn-voltar control"><img class="img-voltar" src="voltar.png" alt="voltar" width="18px"></button>
+                    <button class="btn-avança control"><img class="img-avança" src="avançar.png" alt="avançar" width="18px"></button>
                 </div>
+                <div class="galeria">
+                    <div div class="img-utcc">
+                        <img class="item current-item" src="w1.jpeg" alt="icon" >
+                        <img class="item" src="w2.jpeg" alt="icon" >
+                        <img class="item" src="w3.jpeg" alt="icon" >
+                        <img class="item" src="w4.jpeg" alt="icon" >
+                        <img class="item" src="w5.jpeg" alt="icon" >
+                        <img class="item" src="w6.jpeg" alt="icon" >
+                        <img class="item" src="w7.jpeg" alt="icon" >
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-        <div class="box-footer">
-            <h2>GRUPO 1</h2>
-            <div class="menu-footer">
-                <h3>Nossas Formas de Contato</h3>
-                <div class="contatos">
-                    <a href="#">+55 19 98106-9573</a>
-                    <a href="#">contatogrupo1@gmail.com</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="./script.js"></script>
+
+    <script>
+        const controls = document.querySelectorAll(".control");
+        let currentItem = 0;
+        const items = document.querySelectorAll(".item");
+        const maxItems = items.length;
+
+        controls.forEach((control) => {
+        control.addEventListener("click", (e) => {
+            isLeft = e.target.classList.contains("btn-voltar");
+
+            if (isLeft) {
+            currentItem -= 1;
+            } else {
+            currentItem += 1;
+            }
+
+            if (currentItem >= maxItems) {
+            currentItem = 0;
+            }
+
+            if (currentItem < 0) {
+            currentItem = maxItems - 1;
+            }
+
+            items.forEach((item) => item.classList.remove("current-item"));
+
+            items[currentItem].scrollIntoView({
+            behavior: "smooth",
+            inline: "center"
+            });
+
+            items[currentItem].classList.add("current-item");
+        });
+        });
+    </script>
+
+    <script>
+        const btn = document.querySelector('#refresh')
+
+        btn.addEventListener('click', () => {
+        location.reload()
+        })
+    </script>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+
+        function toggleMenu(event) {
+        if (event.type === 'touchstart') event.preventDefault();
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+        const active = nav.classList.contains('active');
+        event.currentTarget.setAttribute('aria-expanded', active);
+        if (active) {
+            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+        } else {
+            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+        }
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
 </body>
 </html>
